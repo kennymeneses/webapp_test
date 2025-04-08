@@ -9,7 +9,7 @@ public class EditUserModel
     public Guid UserId { get; set; }
     
     [EmailAddress(ErrorMessage = "El formato del correo electrónico no es válido.")]
-    [Required(ErrorMessage = "El correo electrónico es requerido.")]
+    [Required(ErrorMessage = "El correo electrónico es requerido..")]
     public string Email { get; set; }
 
     [Required(ErrorMessage = "El tipo es requerido.")]
