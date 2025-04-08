@@ -13,18 +13,18 @@ public abstract class BaseEntity
     [Column("id", TypeName = "uuid")]
     public Guid Id { get; init; }
 
-    [Column("created_time", TypeName = "timestamp with time zone")]
+    [Column("CreatedTime", TypeName = "timestamp with time zone")]
     public DateTimeOffset CreatedTime { get; init; }
 
-    [Column("created_by", TypeName = "uuid")]
+    [Column("CreatedBy", TypeName = "uuid")]
     public Guid? CreatedBy { get; init; }
 
-    [Column("last_modified_time", TypeName = "timestamp with time zone")]
+    [Column("LastModifiedTime", TypeName = "timestamp with time zone")]
     public DateTimeOffset? LastModifiedTime { get; init; }
 
-    [Column("modified_by", TypeName = "uuid")]
+    [Column("ModifiedBy", TypeName = "uuid")]
     public Guid? ModifiedBy { get; init; }
 
-    [Column("deleted", TypeName = "boolean")]
+    [Column("Deleted", TypeName = "bit")]
     public bool Deleted { get; set; }
 }

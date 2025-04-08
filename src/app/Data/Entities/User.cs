@@ -9,22 +9,22 @@ public class User : BaseEntity
     [Column("IdentificationNumber", TypeName = "uuid")]
     public string IdentificationNumber { get; set; }
     
-    [Column("first_name", TypeName = "character varying")]
+    [Column("FirstName", TypeName = "character varying")]
     public string FirstName { get; set; }
     
-    [Column("last_name", TypeName = "character varying")]
+    [Column("LastName", TypeName = "character varying")]
     public string LastName { get; set; }
     
-    [Column("email", TypeName = "character varying")]
+    [Column("Email", TypeName = "character varying")]
     public string Email { get; set; }
     
-    [Column("gender", TypeName = "integer")]
+    [Column("Gender", TypeName = "integer")]
     public Gender Gender { get; set; }
     
-    [Column("type", TypeName = "integer")]
+    [Column("Type", TypeName = "integer")]
     public UserType Type { get; set; }
     
-    [Column("birthdate", TypeName = "date")]
+    [Column("BirthDate", TypeName = "date")]
     public DateOnly BirthDate { get; set; }
     
     public virtual UserPassword UserPassword { get; set; }

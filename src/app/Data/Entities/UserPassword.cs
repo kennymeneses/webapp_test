@@ -6,7 +6,7 @@ namespace app.Data.Entities;
 [Table("UserPassword", Schema = "dbo")]
 public class UserPassword : BaseEntity
 {
-    [Column("id", TypeName = "uuid")]
+    [Column("UserId", TypeName = "uuid")]
     public Guid UserId { get; set; }
     
     [Column("password", TypeName = "character varying")]
