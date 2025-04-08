@@ -26,4 +26,6 @@ public class User : BaseEntity
     
     [Column("birthdate", TypeName = "date")]
     public DateOnly BirthDate { get; set; }
+    
+    public virtual UserPassword UserPassword { get; set; }
 }
